@@ -1,0 +1,24 @@
+# English language
+en:
+  languageName: EN
+  languageCode: en-us
+  contentDir: content/english
+  weight: 1
+# Portuguese language
+pt-br:
+  languageName: PT-BR
+  languageCode: pt-BR
+  contentDir: content/portuguese
+  weight: 2
+# French language
+fr:
+  languageName: FR
+  languageCode: fr
+  contentDir: content/french
+  weight: 3
+# Spanish language
+es:
+  languageName: ES
+  languageCode: es
+  contentDir: content/spanish
+  weight: 4

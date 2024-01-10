@@ -1,4 +1,4 @@
-############# English navigation ##############
+############# Portuguese navigation ##############
 
 # main menu
 [[main]]
@@ -7,12 +7,12 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "Sobre"
 url = "about/"
 weight = 3
 
 [[main]]
-name = "Contact"
+name = "Contato"
 url = "contact/"
 weight = 4
 
@@ -28,11 +28,11 @@ url = "blog/"
 
 [[main]]
 parent = "Blog"
-name = "Authors"
+name = "Autores"
 url = "authors/"
 
 # footer menu
 [[footer]]
-name = "About"
+name = "Sobre"
 url = "about/"
 weight = 1

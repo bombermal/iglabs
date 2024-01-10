@@ -1,0 +1,136 @@
+######################## default configuration ####################
+baseURL: "/"
+title: "IGLabs"
+theme: "hugoplate"
+timeZone: "America/Fortaleza"
+paginate: 10
+summaryLength: 10
+languageCode: "en-us"
+disableLanguages: []
+hasCJKLanguage: false
+
+########################### Services #############################
+# [services]
+# [services.googleAnalytics]
+# ID: "G-MEASUREMENT_ID"
+
+# [services.disqus]
+# shortname: "themefisher-template"
+
+########################## Permalinks ############################
+permalinks:
+  page:
+    "pages": "/:slugorfilename/"
+
+############################# Modules ############################
+module:
+  mounts:
+    - source: "assets"
+      target: "assets"
+    - source: "hugo_stats.json"
+      target: "assets/watching/hugo_stats.json"
+
+############################# Build ##############################
+build:
+  noJSConfigInAssets: false
+  useResourceCacheWhen: "fallback"
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: "assets/watching/hugo_stats\\.json"
+      target: "style\\.css"
+    - source: "(postcss|tailwind)\\.config\\.js"
+      target: "css"
+    - source: "assets/.*\\.(js|ts|jsx|tsx)"
+      target: "js"
+    - source: "assets/.*\\.(css|scss|sass)"
+      target: "css"
+    - source: "data/.*\\.(.*)$"
+      target: "css"
+    - source: "assets/.*\\.(.*)$"
+      target: "$1"
+
+############################# Outputs ############################
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "WebAppManifest"
+    - "SearchIndex"
+
+############################# Imaging ############################
+imaging:
+  quality: 90
+  resampleFilter: "Lanczos"
+
+############################ Caches ##############################
+caches:
+  images:
+    dir: ":resourceDir/_gen"
+    maxAge: "720h"
+  assets:
+    dir: ":resourceDir/_gen"
+    maxAge: "720h"
+
+############################ Markup ##############################
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: "monokai"
+  tableOfContents:
+    startLevel: 2
+    endLevel: 5
+    ordered: true
+
+########################### Media types ###########################
+mediaTypes:
+  "application/manifest+json":
+    suffixes:
+      - "webmanifest"
+
+########################### Output Format ##########################
+outputFormats:
+  WebAppManifest:
+    mediaType: "application/manifest+json"
+    rel: "manifest"
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+############################# Plugins ##############################
+params:
+  plugins:
+    css:
+      - link: "plugins/swiper/swiper-bundle.css"
+        lazy: true
+      - link: "plugins/glightbox/glightbox.css"
+        lazy: true
+      - link: "plugins/font-awesome/v6/brands.css"
+        lazy: true
+      - link: "plugins/font-awesome/v6/solid.css"
+        lazy: true
+      - link: "plugins/font-awesome/v6/icons.css"
+        lazy: true
+    js:
+      - link: "js/search.js"
+        lazy: false
+      - link: "plugins/swiper/swiper-bundle.js"
+        lazy: false
+      - link: "plugins/cookie.js"
+        lazy: false
+      - link: "plugins/glightbox/glightbox.js"
+        lazy: true
+      - link: "js/gallery-slider.js"
+        lazy: true
+      - link: "js/accordion.js"
+        lazy: true
+      - link: "js/tab.js"
+        lazy: true
+      - link: "js/modal.js"
+        lazy: true
+      - link: "plugins/youtube-lite.js"
+        lazy: true
