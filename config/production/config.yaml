@@ -1,9 +1,0 @@
-baseURL: 'https://example.org/'
-languageCode: pt-br
-title: IGLabs
-params:
-  contact:
-    email: info@example.org
-    phone: +55 10-999-888-777
-  subtitle: The Best Widgets on Earth
-theme: 'ananke'
