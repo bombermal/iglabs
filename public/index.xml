@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IGLabs Production</title>
+    <link>https://example.org/</link>
+    <description>Recent content on IGLabs Production</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 03 Jan 2024 17:58:41 -0300</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Third Post</title>
+      <link>https://example.org/posts/third-post/</link>
+      <pubDate>Wed, 03 Jan 2024 17:58:41 -0300</pubDate>
+      <guid>https://example.org/posts/third-post/</guid>
+      <description>Introduction: A test of non Draft content</description>
+    </item>
+  </channel>
+</rss>
