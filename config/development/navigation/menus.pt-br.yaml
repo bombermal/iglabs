@@ -7,12 +7,15 @@ main:
   - name: "Blog"
     weight: 2
     hasChildren: true
+  - name: "Curriculum"
+    weight: 3
+    hasChildren: true
   - name: "Sobre"
     url: "about/"
-    weight: 3
+    weight: 4
   - name: "Contato"
     url: "contact/"
-    weight: 4
+    weight: 5
   
   ### Blog children ###
   - parent: "Blog"
@@ -22,6 +25,13 @@ main:
     name: "Autores"
     url: "authors/"
 
+  ### Curriculum children ###
+  - parent: "Curriculum"
+    name: "Ivan Álisson"
+    url: "/"
+  - parent: "Curriculum"
+    name: "Gian Lucas"
+    url: "/"
 footer:
   - name: "Sobre"
     url: "about/"

@@ -1,5 +1,6 @@
 ---
-title: "Blog Posts"
-meta_title: ""
-description: "this is meta description"
+title: "Projetos e artigos"
+meta_title: "Blog"
+description: "Projetos e artigos sobre tecnologia."
+# image: "/images/banner.png"
 ---

@@ -6,7 +6,9 @@ timeZone: "America/Fortaleza"
 paginate: 10
 summaryLength: 10
 languageCode: "en-us"
-disableLanguages: []
+disableLanguages: 
+  - fr
+  - es
 hasCJKLanguage: false
 
 ########################### Services #############################

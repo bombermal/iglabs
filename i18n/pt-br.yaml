@@ -16,6 +16,9 @@
 - id: categories
   translation: Categorias
 
+- id: authors
+  translation: Autores
+
 - id: tags
   translation: Tags
 
@@ -26,7 +29,7 @@
   translation: Compartilhar
 
 - id: search_input_placeholder
-  translation: Buscar Post ...
+  translation: Buscar Post...
 
 - id: no_results_for
   translation: Sem resultados para

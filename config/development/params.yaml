@@ -82,6 +82,7 @@ widgets:
   sidebar:
     - categories
     - tags
+    - authors
 
 # google map
 # [google_map]
