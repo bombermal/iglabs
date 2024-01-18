@@ -3,7 +3,7 @@ baseURL: "/"
 title: "IGLabs"
 theme: "hugoplate"
 timeZone: "America/Fortaleza"
-paginate: 10
+paginate: 2
 summaryLength: 10
 languageCode: "en-us"
 disableLanguages: 

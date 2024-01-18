@@ -1,11 +1,11 @@
 <!-- authors -->
-{{ if isset site.Taxonomies "categories" }}
-  {{ if not (eq (len site.Taxonomies.categories) 0) }}
+{{ if isset site.Taxonomies "authors" }}
+  {{ if not (eq (len site.Taxonomies.authors) 0) }}
     <div class="mb-8">
       <h5 class="mb-6">{{ i18n "authors" }}</h5>
       <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
         <ul class="space-y-4">
-          {{ range $name, $items := site.Taxonomies.categories }}
+          {{ range $name, $items := site.Taxonomies.authors }}
             <li>
               <a
                 class="hover:text-primary dark:hover:text-darkmode-primary {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `authors`) (eq $.Page.Title .Page.Title)) }}
